@@ -24,10 +24,8 @@
 			for (j = 0; j < sizeof(grades[0]) / 4; j++) {
 				average += grades[i][j];
 			}
-			printf("size of grade 0 %d\n", (int) sizeof(grades));
-
 			/* TODO: compute the average marks for subject i */
-			printf("The average marks obtained in subject %d is: %.2f\n", i, average);
+			printf("The average marks obtained in subject %d is: %.2f\n", i, average / (sizeof(grades[0]) / 4));
 		}
 
 		return 0;
