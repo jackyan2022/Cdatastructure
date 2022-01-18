@@ -3,10 +3,11 @@
 int main() {
   /* define first_name */
   /* define last_name */
+  char * first_name = "John";
+  char last_name[] = "Doe";
   char name[100];
 
-  char first_name[50] = "John";
-  char last_name[50] = "Doe";
+  last_name[0] = 'B';
   sprintf(name, "%s %s", first_name, last_name);
   if (strncmp(name, "John Boe", 100) == 0) {
       printf("Done!\n");
